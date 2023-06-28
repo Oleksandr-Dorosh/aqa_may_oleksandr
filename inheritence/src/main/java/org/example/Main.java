@@ -6,36 +6,29 @@ public class Main {
         int num1 = 3;
         int num2 = 56;
 
-        StringBuilder hw = new StringBuilder();
-        hw.append(num1).append("+").append(num2).append("=").append(num1+num2);
-        String dodavanya =hw.toString();
+        StringBuilder dodavanya = new StringBuilder();
+        dodavanya.append(num1).append("+").append(num2).append("=").append(num1+num2);
 
-        hw = new StringBuilder();
-        hw.append(num1).append("-").append(num2).append("=").append(num1-num2);
-        String vidnimanya = hw.toString();
 
-        hw = new StringBuilder();
-        hw.append(num1).append("*").append(num2).append("=").append(num1*num2);
-        String mnojenya = hw.toString();
+        StringBuilder vidnimanya = new StringBuilder();
+        vidnimanya.append(num1).append("-").append(num2).append("=").append(num1-num2);
+
+        StringBuilder  mnojenya = new StringBuilder();
+        mnojenya.append(num1).append("*").append(num2).append("=").append(num1*num2);
+
 
         System.out.println(dodavanya);
         System.out.println(vidnimanya);
         System.out.println(mnojenya);
 
-        hw = new StringBuilder(dodavanya);
-        hw.replace(hw.indexOf("="),hw.indexOf("=")+1,"равно");
-        String dodavanyaModified = hw.toString();
+        dodavanya.replace(dodavanya.indexOf("="),dodavanya.indexOf("=")+1,"равно");
 
-        hw = new StringBuilder(vidnimanya);
-        hw.replace(hw.indexOf("="),hw.indexOf("=")+1,"равно");
-        String vidnimanyaModified = hw.toString();
+        vidnimanya.replace(vidnimanya.indexOf("="),vidnimanya.indexOf("=")+1,"равно");
 
-        hw = new StringBuilder(mnojenya);
-        hw.replace(hw.indexOf("="),hw.indexOf("=")+1,"равно");
-        String mnojenyaModified = hw.toString();
+        mnojenya.replace(mnojenya.indexOf("="),mnojenya.indexOf("=")+1,"равно");
 
-        System.out.println(dodavanyaModified);
-        System.out.println(vidnimanyaModified);
-        System.out.println(mnojenyaModified);
+        System.out.println(dodavanya);
+        System.out.println(vidnimanya);
+        System.out.println(mnojenya);
     }
 }
