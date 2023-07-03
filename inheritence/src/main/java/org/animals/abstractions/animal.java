@@ -1,10 +1,10 @@
 package org.animals.abstractions;
 
-public abstract class Animal {
+public abstract class animal {
     String name;
     int age;
 
-    public Animal(String name, int age) {
+    public animal(String name, int age) {
         this.name = name;
         this.age = age;
     }

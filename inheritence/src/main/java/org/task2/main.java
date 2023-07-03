@@ -1,7 +1,7 @@
 package org.task2;
 
 
-public class Main {
+public class main {
     public static void main(String[] args) {
         int num1 = 3;
         int num2 = 56;
