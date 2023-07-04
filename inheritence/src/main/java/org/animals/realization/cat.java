@@ -4,15 +4,34 @@ import org.animals.abstractions.animal;
 
 public class cat extends animal {
 
-    boolean hasSoftWool;
+    private boolean hasSoftWool;
+    private String name;
+    private int age;
 
     public cat(String name, int age, boolean hasSoftWool) {
         super(name, age);
         this.hasSoftWool= hasSoftWool;
     }
 
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    @Override
+    public int getAge() {
+        return age;
+    }
+
     @Override
     public void makeSound() {
-        System.out.println("meow");
+        System.out.println("Meow");
+    }
+
+    public void setHasSoftWool(boolean hasSoftWool) {
+        this.hasSoftWool = hasSoftWool;
+    }
+
+    public boolean isHasSoftWool() {
+        return hasSoftWool;
     }
 }
