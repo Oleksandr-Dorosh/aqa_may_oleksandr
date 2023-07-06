@@ -12,7 +12,7 @@ public class tiger extends cat {
     }
 
     public void setPredator(boolean predator) {
-        this.predator = predator;
+        this.predator =predator;
     }
 
     public boolean isPredator() {
