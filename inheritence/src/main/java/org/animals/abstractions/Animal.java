@@ -1,10 +1,10 @@
 package org.animals.abstractions;
 
-public abstract class animal {
-    String name;
-    int age;
+public abstract class Animal {
+    private String name;
+    private int age;
 
-    public animal(String name, int age) {
+    public Animal(String name, int age) {
         this.name = name;
         this.age = age;
         setName(name);
@@ -14,7 +14,7 @@ public abstract class animal {
         if (name != null) {
             this.name = name;
         } else {
-            System.out.println("Name can not be null");
+            System.out.println("Name cannot be null");
         }
     }
 
@@ -27,14 +27,12 @@ public abstract class animal {
     }
 
     public void eat() {
-        System.out.println("i am eating...");
+        System.out.println("I am eating...");
     }
 
     public void setAge(int age) {
         this.age = age;
     }
 
-
     public abstract void makeSound();
 }
-

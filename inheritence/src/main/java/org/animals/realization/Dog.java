@@ -1,14 +1,11 @@
 package org.animals.realization;
 
-import org.animals.abstractions.animal;
+import org.animals.abstractions.Animal;
 
-public final class dog extends animal {
-
+public final class Dog extends Animal {
     private boolean hasHardWool;
-    private int age;
-    private String name;
 
-    public dog(String name, int age, boolean hasHardWool) {
+    public Dog(String name, int age, boolean hasHardWool) {
         super(name, age);
         this.hasHardWool = hasHardWool;
     }
@@ -17,13 +14,12 @@ public final class dog extends animal {
         this.hasHardWool = hasHardWool;
     }
 
-
     public boolean isHasHardWool() {
         return hasHardWool;
     }
 
     @Override
     public void makeSound() {
-        System.out.println("bark");
+        System.out.println("Bark");
     }
 }

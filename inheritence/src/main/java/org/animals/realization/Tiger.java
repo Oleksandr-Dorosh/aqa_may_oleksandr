@@ -1,18 +1,17 @@
 package org.animals.realization;
 
-import org.animals.abstractions.animal;
+import org.animals.abstractions.Animal;
 
-public class tiger extends cat {
-
+public class Tiger extends Cat {
     private boolean predator;
 
-    public tiger(String name, int age, boolean hasWool, boolean predator) {
+    public Tiger(String name, int age, boolean hasWool, boolean predator) {
         super(name, age, hasWool);
         this.predator = predator;
     }
 
     public void setPredator(boolean predator) {
-        this.predator =predator;
+        this.predator = predator;
     }
 
     public boolean isPredator() {
