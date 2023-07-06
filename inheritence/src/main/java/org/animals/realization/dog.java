@@ -13,26 +13,6 @@ public final class dog extends animal {
         this.hasHardWool = hasHardWool;
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    @Override
-    public String getName() {
-        return name;
-    }
-
-    @Override
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    @Override
-    public int getAge() {
-        return age;
-    }
-
     public void setHasHardWool(boolean hasHardWool) {
         this.hasHardWool = hasHardWool;
     }

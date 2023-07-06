@@ -20,5 +20,6 @@ public class Main {
         System.out.println(tiger.getName());
         System.out.println(dog.getName());
         System.out.println(cat.getName());
+        System.out.println(tiger.getAge());
     }
 }

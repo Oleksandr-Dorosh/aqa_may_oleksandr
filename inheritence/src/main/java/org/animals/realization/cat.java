@@ -13,15 +13,6 @@ public class cat extends animal {
         this.hasSoftWool= hasSoftWool;
     }
 
-    public void setAge(int age) {
-        this.age = age;
-    }
-
-    @Override
-    public int getAge() {
-        return age;
-    }
-
     @Override
     public void makeSound() {
         System.out.println("Meow");
