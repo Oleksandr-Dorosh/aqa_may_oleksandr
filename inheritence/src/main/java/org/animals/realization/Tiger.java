@@ -22,4 +22,9 @@ public class Tiger extends Cat {
     public void makeSound() {
         System.out.println("Roar");
     }
+
+    @Override
+    public String toString() {
+        return "Tiger - " + super.toString();
+    }
 }

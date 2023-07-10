@@ -17,9 +17,8 @@ public class Main {
         dog.eat();
         tiger.eat();
 
-        System.out.println(tiger.getName());
-        System.out.println(dog.getName());
-        System.out.println(cat.getName());
-        System.out.println(tiger.getAge());
+        System.out.println(tiger.toString());
+        System.out.println(dog.toString());
+        System.out.println(cat.toString());
     }
 }

@@ -22,4 +22,9 @@ public final class Dog extends Animal {
     public void makeSound() {
         System.out.println("Bark");
     }
+
+    @Override
+    public String toString() {
+        return "Dog - " + super.toString() + ';' + " Does the dog have a hard wool?" + ':' + hasHardWool;
+    }
 }
