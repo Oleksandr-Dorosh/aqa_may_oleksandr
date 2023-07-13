@@ -16,7 +16,7 @@ public abstract class Animal {
         if (name != null ){
             this.name = name;
         }else {
-            System.out.println("Name cannot be null");
+            System.out.println("Name cannot be null ");
         }
     }
 

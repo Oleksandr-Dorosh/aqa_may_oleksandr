@@ -20,7 +20,7 @@ public class Tiger extends Cat {
 
     @Override
     public void makeSound() {
-        System.out.println("Roar");
+        System.out.println("Roar ");
     }
 
     @Override
