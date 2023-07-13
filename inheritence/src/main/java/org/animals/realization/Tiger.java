@@ -25,6 +25,6 @@ public class Tiger extends Cat {
 
     @Override
     public String toString() {
-        return "Tiger - " + super.toString();
+        return "Name: " + getName() + ", Age: " +getAge() + ", Type: " + getType();
     }
 }

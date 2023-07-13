@@ -1,12 +1,13 @@
 package org.animals.realization;
 
 import org.animals.abstractions.Animal;
+import org.animals.enums.AnimalName;
 
 public class Cat extends Animal {
     private boolean hasSoftWool;
 
     public Cat(String name, int age, boolean hasSoftWool) {
-        super(name, age);
+        super(AnimalName.valueOf(name), age);
         this.hasSoftWool = hasSoftWool;
     }
 
@@ -25,6 +26,6 @@ public class Cat extends Animal {
 
     @Override
     public String toString() {
-        return "Cat - " + super.toString();
+        return "Name: " + getName() + ", Age: " +getAge() + ", Type: " + getType();
     }
 }
