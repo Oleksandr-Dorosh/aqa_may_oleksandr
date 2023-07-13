@@ -12,7 +12,7 @@ public class Main {
         cat.setType(AnimalType.DOMESTIC);
         Dog dog = new Dog("Jessie", 3, true);
         dog.setType(AnimalType.DOMESTIC);
-        Tiger tiger = new Tiger("Tiger ", 2, true, true);
+        Tiger tiger = new Tiger("Tiger", 2, true, true);
         tiger.setType(AnimalType.WILD);
 
         
