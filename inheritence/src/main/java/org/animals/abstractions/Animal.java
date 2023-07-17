@@ -1,19 +1,21 @@
 package org.animals.abstractions;
 
+import org.animals.enums.AnimalType;
+
 public abstract class Animal {
     private String name;
     private int age;
+    private AnimalType type;
 
     public Animal(String name, int age) {
         this.name = name;
         this.age = age;
-        setName(name);
     }
 
     public void setName(String name) {
-        if (name != null) {
+        if (name != null ){
             this.name = name;
-        } else {
+        }else {
             System.out.println("Name cannot be null");
         }
     }
@@ -32,6 +34,14 @@ public abstract class Animal {
 
     public void setAge(int age) {
         this.age = age;
+    }
+
+    public AnimalType getType() {
+        return type;
+    }
+
+    public void setType(AnimalType type) {
+        this.type = type;
     }
 
     public abstract void makeSound();

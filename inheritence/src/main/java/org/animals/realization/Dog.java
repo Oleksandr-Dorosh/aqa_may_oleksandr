@@ -25,6 +25,6 @@ public final class Dog extends Animal {
 
     @Override
     public String toString() {
-        return "Dog - " + super.toString() + ';' + " Does the dog have a hard wool?" + ':' + hasHardWool;
-    }
+            return "Name: " + getName() + ", Age: " +getAge() + ", Type: " + getType();
+        }
 }

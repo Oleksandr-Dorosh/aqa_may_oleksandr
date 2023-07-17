@@ -25,6 +25,6 @@ public class Cat extends Animal {
 
     @Override
     public String toString() {
-        return "Cat - " + super.toString();
+        return "Name: " + getName() + ", Age: " +getAge() + ", Type: " + getType();
     }
 }
