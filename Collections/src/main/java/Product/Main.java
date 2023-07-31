@@ -19,7 +19,7 @@ public class Main {
         out.println("All product names sorted: " + allProductNamesSorted);
 
         List<Double> pricesGreaterThan10 = productMarket.getPricesGreaterThan10();
-        out.println("Prices greater than 10: " + pricesGreaterThan10);
+        out.println("Prices greater than 10 : " + pricesGreaterThan10);
 
         List<Double> pricesLessThan5 = productMarket.getPricesLessThan5();
         out.println("Prices less than 5: " + pricesLessThan5);

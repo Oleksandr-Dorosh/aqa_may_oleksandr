@@ -56,6 +56,6 @@ public class ProductMarket {
     public List<Product> getProductsSortedByPrice() {
         List<Product> sortedProducts = new ArrayList<>(products);
         Collections.sort(sortedProducts, Comparator.comparingDouble(Product::getPrice));
-        return sortedProducts;
+        return sortedProducts ;
     }
 }
