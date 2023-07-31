@@ -26,5 +26,8 @@ public class Main {
 
         List<String> allPricesAsString = productMarket.getAllPricesAsString();
         out.println("All prices as string: " + allPricesAsString);
+
+        List<Product> productsSortedByPrice = productMarket.getProductsSortedByPrice();
+        out.println("Products sorted by price: " + productsSortedByPrice);
     }
 }

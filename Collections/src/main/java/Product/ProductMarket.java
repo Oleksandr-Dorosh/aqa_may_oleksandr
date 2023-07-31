@@ -2,9 +2,11 @@ package Product;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
+import java.util.Comparator;
 
 public class ProductMarket {
     private List<Product> products;
+
 
     public ProductMarket(List<Product> products) {
         this.products = products;
@@ -50,5 +52,10 @@ public class ProductMarket {
             pricesAsString.add(String.valueOf(product.getPrice()));
         }
         return pricesAsString;
+    }
+    public List<Product> getProductsSortedByPrice() {
+        List<Product> sortedProducts = new ArrayList<>(products);
+        Collections.sort(sortedProducts, Comparator.comparingDouble(Product::getPrice));
+        return sortedProducts;
     }
 }
