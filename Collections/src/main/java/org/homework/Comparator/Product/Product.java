@@ -1,8 +1,8 @@
-package Product;
+package org.homework.Comparator.Product;
 
 public class Product implements Comparable<Product> {
-    private String name;
-    private double price;
+    private final String name;
+    private final double price;
 
     public Product(String name, double price) {
         this.name = name;
@@ -20,7 +20,7 @@ public class Product implements Comparable<Product> {
     @Override
     public String toString() {
         return "Product{" +
-                "name='" + name + '\'' +
+                "name= '" + name + '\'' +
                 ", price=" + price +
                 '}';
     }
