@@ -29,7 +29,7 @@ public class CalculatorTest {
         int b = 12;
         int result = 44;
         int actualResult = calculator.sum(a, b);
-        Assertions.assertTrue(result == actualResult, "Actual result: " + actualResult + "; " + "Expected was :" + result);
+        Assertions.assertEquals(result, actualResult, "Actual result: " + actualResult + "; " + "Expected was :" + result);
     }
 
     @Test
@@ -39,7 +39,7 @@ public class CalculatorTest {
         int b = 2;
         int result = 9;
         int actualResult = calculator.subtraction(a, b);
-        Assertions.assertFalse(result == actualResult, "Actual result: " + actualResult + "; " + "Expected was :" + result);
+        Assertions.assertNotEquals(result, actualResult, "Actual result: " + actualResult + "; " + "Expected was :" + result);
     }
 
     @Test
@@ -63,7 +63,7 @@ public class CalculatorTest {
     }
 
     @AfterEach
-    public void after(){
+    public void after() {
         System.out.println("After each");
     }
 
@@ -71,17 +71,20 @@ public class CalculatorTest {
     public static void close() {
         System.out.println("All tests was finished");
     }
+
     @ParameterizedTest
     @MethodSource("getValues")
     @DisplayName("Test sum a+b")
-    public void testSum1(int a,int b,int result){
-        int actualResult= calculator.sum(a,b);
-        Assertions.assertEquals(result, actualResult, "Actual result :" + actualResult + ". " + "Expected result: " + result );
+    public void testSum1(int a, int b, int result) {
+        int actualResult = calculator.sum(a, b);
+        Assertions.assertEquals(result, actualResult, "Actual result :" + actualResult + ". " + "Expected result: " + result);
 
     }
-    public static Stream<Arguments> getValues(){
+
+    public static Stream<Arguments> getValues() {
         return Stream.of(
-                Arguments.of(2,3,5)
+                Arguments.of(2, 3, 5),
+                Arguments.of(3, 6, 9)
         );
     }
 }
