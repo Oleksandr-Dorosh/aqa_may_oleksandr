@@ -17,13 +17,20 @@ public class CalculatorTest {
         System.out.println("Before test method");
     }
 
-    @Test
-    public void sumTest(){
-        int a = 10;
-        int b = 13;
-        int result = calculator.sum(a,b);
-        Assert.assertEquals(result,23);
-        System.out.println("Test1");
+    @DataProvider(name = "testdata")
+    public Object[][] testData(){
+        return new Object[][]{
+                {10,13,23},
+                {15,5,20},
+                {8,4,12}
+        };
+    }
+
+    @Test(dataProvider = "testdata")
+    public void sumTest(int a, int b, int expected) {
+        int result = calculator.sum(a, b);
+        Assert.assertEquals(result, expected);
+        System.out.println("Тест суми - Результат: " + result);
     }
 
     @Test
@@ -41,7 +48,7 @@ public class CalculatorTest {
         int b =2;
         int result= calculator.division(a,b);
         Assert.assertEquals(result,6);
-        System.out.println("Test3");
+        System.out.println("Тест ділення - результат: " + result);
     }
     @AfterMethod
     public void afterTestMethod(){

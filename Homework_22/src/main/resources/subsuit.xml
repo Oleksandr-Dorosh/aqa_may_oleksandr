@@ -1,8 +1,7 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
-<suite name="Substraction test">
-    <test name="test sub">
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Набір тестів калькулятора">
+    <test name="Тести калькулятора">
         <classes>
-            <class name="com.homework.calculator.CalculatorTestSubstraction"/>
             <class name="com.homework.calculator.CalculatorTest"/>
         </classes>
     </test>
