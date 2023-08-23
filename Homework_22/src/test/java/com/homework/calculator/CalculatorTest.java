@@ -6,23 +6,24 @@ import org.testng.annotations.*;
 public class CalculatorTest {
 
     private Calculator calculator;
+
     @BeforeClass
-    public void init(){
+    public void init() {
         calculator = new Calculator();
         System.out.println("Before class");
     }
 
     @BeforeMethod
-    public void beforeTestMethod(){
+    public void beforeTestMethod() {
         System.out.println("Before test method");
     }
 
     @DataProvider(name = "testdata")
-    public Object[][] testData(){
+    public Object[][] testData() {
         return new Object[][]{
-                {10,13,23},
-                {15,5,20},
-                {8,4,12}
+                {10, 13, 23},
+                {15, 5, 20},
+                {8, 4, 12}
         };
     }
 
@@ -34,29 +35,31 @@ public class CalculatorTest {
     }
 
     @Test
-    public void subTest(){
-        int a=12;
-        int b=2;
-        int result= calculator.subtraction(a,b);
-        Assert.assertEquals(result,10);
+    public void subTest() {
+        int a = 12;
+        int b = 2;
+        int result = calculator.subtraction(a, b);
+        Assert.assertEquals(result, 10);
         System.out.println("Test2");
 
     }
+
     @Test
-    public void divTest(){
-        int a =12;
-        int b =2;
-        int result= calculator.division(a,b);
-        Assert.assertEquals(result,6);
+    public void divTest() {
+        int a = 12;
+        int b = 2;
+        int result = calculator.division(a, b);
+        Assert.assertEquals(result, 6);
         System.out.println("Тест ділення - результат: " + result);
     }
+
     @AfterMethod
-    public void afterTestMethod(){
+    public void afterTestMethod() {
         System.out.println("After test method");
     }
 
     @AfterClass
-    public void afterTestClass(){
+    public void afterTestClass() {
         System.out.println("After class");
     }
 }

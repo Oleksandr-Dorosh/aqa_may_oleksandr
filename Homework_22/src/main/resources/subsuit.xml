@@ -1,6 +1,6 @@
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Набір тестів калькулятора">
-    <test name="Тести калькулятора">
+    <test name="Тест калькулятора">
         <classes>
             <class name="com.homework.calculator.CalculatorTest"/>
         </classes>

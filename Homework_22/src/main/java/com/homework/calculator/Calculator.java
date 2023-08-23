@@ -10,7 +10,7 @@ public class Calculator {
     }
 
     public int division(int a, int b) {
-        if (b==0){
+        if (b == 0) {
             throw new ArithmeticException("Division by zero is forbidden");
         }
         return a / b;

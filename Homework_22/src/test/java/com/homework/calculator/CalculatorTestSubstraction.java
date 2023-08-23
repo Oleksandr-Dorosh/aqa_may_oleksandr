@@ -10,7 +10,7 @@ public class CalculatorTestSubstraction {
     @BeforeClass
     public void init() {
         calculator = new Calculator();
-        System.out.println("Before class");
+        System.out.println("Перед класом");
     }
 
     @Test
